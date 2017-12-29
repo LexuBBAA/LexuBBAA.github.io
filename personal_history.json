@@ -1,0 +1,163 @@
+{
+    "data":[
+    {
+        "title": "The Birth",
+        "date": "3rd of December, 1996",
+        "description": "The winter of 1996 has brought the Birsasteanu family a great joy. Their new family member, Bogdan Andrei Alexandru, has been born. It was one of the greatest gifts that Sorin's wife, Camelia, could have gotten on her aniversary. She was just celebrating her 22nd birthday, when her baby got to see the light for the first time. That was the moment when Sorin and Camelia realised that their son will aim for the stars.",
+        "hasAcc": false,
+        "accs": []
+    },
+    
+    {
+        "title": "Kindergarden",
+        "date": "Pula mai stie....",
+        "description": "Lorem ipsum for the moment...",
+        "hasAcc": false,
+        "accs": []
+    },
+    
+    {
+        "title": "Primary School",
+        "date": "15th of September, 2003",
+        "description": "",
+        "hasAcc": true,
+        "accs": [
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            }
+        ]
+    },
+    
+    {
+        "title": "Highschool",
+        "date": "15th of September, 2011",
+        "description": "",
+        "hasAcc": true,
+        "accs": [
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            }
+        ]
+    },
+    
+    {
+        "title": "University",
+        "date": "1st of November, 2015",
+        "description": "",
+        "hasAcc": true,
+        "accs": [
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            }
+        ]
+    },
+    
+    {
+        "title": "First Job",
+        "date": "June, 2016",
+        "description": "",
+        "hasAcc": true,
+        "accs": [
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            }
+        ]
+    },
+    
+    {
+        "title": "Second Job",
+        "date": "5th of December, 2016",
+        "description": "",
+        "hasAcc": true,
+        "accs": [
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            }
+        ]
+    },
+    
+    {
+        "title": "University",
+        "date": "1st of November, 2017",
+        "description": "",
+        "hasAcc": true,
+        "accs": [
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            },
+            {
+                "title": "To do...",
+                "date": "To do...",
+                "description": "To do..."
+            }
+        ]
+    }
+]
+}
