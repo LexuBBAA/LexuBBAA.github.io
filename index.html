@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <title>Web Curriculum!</title>
@@ -9,7 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="imports/bootstrap.min.css">
     <link rel="stylesheet" href="imports/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="timeline-style.css"/>
 </head>
 <body>
     <!-- HEADER -->
@@ -17,7 +20,7 @@
         <div class="col">
             <nav class="col navbar navbar-expand-sm navbar-light bg-light">
                 <div class="col-2">
-                    <img class="img-fluid" src="assets/" alt="Logo Image">
+                    <img src="assets/cv-icon-vector.png" alt="Logo Image" style="height: 50px; width: 50px;">
                 </div>
 
                 <button class="offset-md-4 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +45,6 @@
     </div>
 
     <!-- BODY -->
-    
     <!-- ABOUT ME -->
     <div class="container">
         <div class="row justify-content-center">
@@ -54,39 +56,56 @@
         </div>
         <div class="row align-items-center">
             <div class="col col-sm">
-                    <img class="img-fluid img-thumbnail" src="assets/my_photo.JPG" alt="Person Image"/>
+                <img class="img-fluid img-thumbnail mx-auto d-block" src="assets/my_photo.JPG" alt="Person Image" style="max-height: 250px;"/>
             </div>
             <div class="col-12 col-md-auto col-sm">
                 <blockquote class="blockquote blockquote-reverse">
                     <p class="mb-0"><i>"Intelligence without ambition is a bird without wings."</i></p>
-                    <footer class="blockquote-footer"> Salvador Dali</footer>
+                    <footer class="blockquote-footer">Salvador Dali</footer>
                 </blockquote>
             
                 <blockquote class="blockquote blockquote-reverse">
                     <p class="mb-0"><i>"You are never too old to set another goal."</i></p>
-                    <footer class="blockquote-footer"> Aristotle</footer>
+                    <footer class="blockquote-footer">Aristotle</footer>
                 </blockquote>
             
                 <blockquote class="blockquote blockquote-reverse">
                     <p class="mb-0"><i>"Life owes you nothing; you owe yourself <u>everything</u>."</i></p>
-                    <footer class="blockquote-footer"> Corey Taylor</footer>
+                    <footer class="blockquote-footer">Corey Taylor</footer>
                 </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
         </div>
     </div>
 
     <!-- MY TIMELINE -->
-    <div class="container" style="width: 100%">
+    <!--
+    <div class="container" style="width: 100%;">
         <div class="row no-gutters">
             <div class="col">
 			<section class="main-timeline-section">
 			    <div class="timeline-start"></div>
 			    <div class="conference-center-line"></div>
-			    <div class="conference-timeline-content">
-			   	</div>
+			    <div class="conference-timeline-content"></div>
 			   	<div class="timeline-end"></div>
 		  	</section>
 		</div>
+        </div>
+    </div>
+    -->
+    <div class="row">
+        <!-- VISUAL TIMELINE -->
+        <div class="col-4">
+            <div class="timeline"></div>
+        </div>
+        
+        <!-- DETAILS ACCORDING TO TIMELINE -->
+        <div class="col-8">
+        
         </div>
     </div>
     
@@ -99,7 +118,6 @@
         </div>
     </div>
 
-    
     <!-- HIRE ME! -->
     <div class="container">
         <div class="row">

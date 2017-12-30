@@ -14,40 +14,38 @@ function readFile(file, callback) {
 }
 
 function displayDetails(historyItem) {
-    var itemSummaryContainer = document.getElementById("evolutionStep");
-    console.log(historyItem.title + " Clicked");
     //TODO: change the displayed data
+    
+    alert(historyItem.title);
 } 
 
-function buildElem(jsonElement, index) {
+function buildTimelineEvent(jsonElement) {
+    var timeline = document.getElementsByClassName("timeline")[0];
+    
     var htmlElement = document.createElement("div");
-    htmlElement.className = "timeline-article";
-    htmlElement.className += (index % 2 == 0) ? 
-        " timeline-article-top" : " timeline-article-bottom";
+    htmlElement.className += "timeline-container";
+    htmlElement.className += " right";
     
-    var htmlInner = document.createElement("div");
-    htmlInner.className = "content-date";
+    var htmlContent = document.createElement("div");
+    htmlContent.className += "timeline-content";
     
-    var htmlSpan = document.createElement("span");
-    htmlSpan.innerHTML = jsonElement.title;
+    var htmlTitle = document.createElement("h2");
+    htmlTitle.innerHTML = jsonElement.title;
     
-    var htmlMeta = document.createElement("div");
-    htmlMeta.className = "meta-date";
+    htmlContent.appendChild(htmlTitle);
     
-    htmlInner.appendChild(htmlSpan);
-    htmlElement.appendChild(htmlInner);
-    htmlElement.appendChild(htmlMeta);
-    htmlElement.addEventListener("click", function() {
+    htmlElement.appendChild(htmlContent);
+    htmlElement.onclick = function() {
         displayDetails(jsonElement);
-    });
+    }
     
-    return htmlElement;
+    timeline.appendChild(htmlElement);
 }
 
 function loadData() {
     readFile(file, function(response) {
         var jsonData = JSON.parse(response);
-        for(let i = 0; i < jsonData.data.length; i++) {
+        for(let i = jsonData.data.length - 1; i >= 0; i--) {
             var j = jsonData.data[i];
             myHistoryArray.push(j);
         }
@@ -57,10 +55,7 @@ function loadData() {
         
         for(let i = myHistoryArray.length - 1; i >= 0; i--) {
             var element = myHistoryArray[i];
-            console.log(element);
-            var htmlElem = buildElem(element, i);
-            
-            timeFrame.appendChild(htmlElem);
+            buildTimelineEvent(element);
         }
     });
 }
