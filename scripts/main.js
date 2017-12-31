@@ -1,5 +1,9 @@
 var file = 'personal_history.json';
+var myBio = {};
+var mySkills = [];
+var mySoftSkills = [];
 var myHistoryArray = [];
+var myContact = {};
 
 /**
 *   Method used to read the JSON file in order to parse it
@@ -25,8 +29,14 @@ function readFile(file, callback) {
 function loadData() {
     readFile(file, function(response) {
         var jsonData = JSON.parse(response);
-        for(let i = jsonData.data.length - 1; i >= 0; i--) {
-            var j = jsonData.data[i];
+        
+        myBio = jsonData.data;
+        mySkills = jsonData.skills;
+        mySoftSkills = jsonData.soft_skills;
+        myContact = jsonData.contact;
+        
+        for(let i = jsonData.events.length - 1; i >= 0; i--) {
+            var j = jsonData.events[i];
             myHistoryArray.push(j);
         }
         
