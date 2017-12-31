@@ -1,6 +1,11 @@
 var file = 'personal_history.json';
 var myHistoryArray = [];
 
+/**
+*   Method used to read the JSON file in order to parse it
+*  to the actual JSON array that the script will use for
+*  displaying the data regarding lifetime events
+*/
 function readFile(file, callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -11,37 +16,12 @@ function readFile(file, callback) {
         }
     }
     xobj.send(null);
-}
-
-function displayDetails(historyItem) {
-    //TODO: change the displayed data
-    
-    alert(historyItem.title);
 } 
 
-function buildTimelineEvent(jsonElement) {
-    var timeline = document.getElementsByClassName("timeline")[0];
-    
-    var htmlElement = document.createElement("div");
-    htmlElement.className += "timeline-container";
-    htmlElement.className += " right";
-    
-    var htmlContent = document.createElement("div");
-    htmlContent.className += "timeline-content";
-    
-    var htmlTitle = document.createElement("h2");
-    htmlTitle.innerHTML = jsonElement.title;
-    
-    htmlContent.appendChild(htmlTitle);
-    
-    htmlElement.appendChild(htmlContent);
-    htmlElement.onclick = function() {
-        displayDetails(jsonElement);
-    }
-    
-    timeline.appendChild(htmlElement);
-}
-
+/**
+*   Method used to parse the JSON file to the actual array
+*  containing the lifetime events
+*/
 function loadData() {
     readFile(file, function(response) {
         var jsonData = JSON.parse(response);
@@ -49,7 +29,6 @@ function loadData() {
             var j = jsonData.data[i];
             myHistoryArray.push(j);
         }
-        console.log(myHistoryArray);
         
         var timeFrame = document.getElementsByClassName("conference-timeline-content")[0];
         
@@ -60,6 +39,8 @@ function loadData() {
     });
 }
 
+//  On successfull document loading, initialize the base data
+//used by the page
 $(document).ready(function() {
     loadData();
 });
