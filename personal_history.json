@@ -1,5 +1,94 @@
 {
-    "data":[
+    "data": {
+        "birth_date": "3rd of December, 1996",
+        "bio": "",
+        "hobbies": [
+            {
+                "title": "Basketball fanatic",
+                "description": "Basketball has been one of my most loved activity throughout life. Before going to University, I was thinking about going to USA at University to <i>'live the American dream'</i>. Unfortunatelly, the time now does not allow me to pursue a regular trainings."
+            },
+            {
+                "title": "Artist wanna-be",
+                "description": "Since a very young age, I was attracted to capturing what I considered beautiful with a pencil on a piece of paper, but nowadays, due to the lack of practice, I am barely able to reproduce some of my old drawings and sketches."
+            },
+            {
+                "title": "Book addict",
+                "description": "Starting in highschool, my passion for books has grown roots. From 1-2 books owned (and read for anyone who thought I only buy them), I got to a full bookshelf containing multiple novels of fiction, from <i>The Divine Comedy</i>, to <i>Dan's Brown</i> collection, various <i>thrillers</i>, and more. Who thought that I will love reading? - Not me, that's for sure."
+            },
+            {
+                "title": "Average youngster",
+                "description": "I am not trying to sell you donuts here, and we all knew that this was coming. I'm young, it's clear that I enjoy partying, and living my life; in the end, it is the only one I am allowed, right?"
+            }
+        ]
+    },
+    
+    "skills": [
+        {
+            "title": "Java",
+            "level": 3.5
+        },
+        {
+            "title": "JavaScript",
+            "level": 3
+        },
+        {
+            "title": "C",
+            "level": 3
+        },
+        {
+            "title": "C++",
+            "level": 2
+        },
+        {
+            "title": "HTML",
+            "level": 3.5
+        },
+        {
+            "title": "CSS",
+            "level": 3
+        },
+        {
+            "title": "APEX",
+            "level": 4
+        }
+    ],
+    
+    "soft_skills": [
+        {
+            "title": "Time management",
+            "level": 4
+        },
+        {
+            "title": "Team management",
+            "level": 4.5
+        },
+        {
+            "title": "Leadership",
+            "level": 4.5
+        },
+        {
+            "title": "Problem solving",
+            "level": 3.5
+        },
+        {
+            "title": "Teamwork",
+            "level": 3
+        },
+        {
+            "title": "Dynamism",
+            "level": 3.5
+        },
+        {
+            "title": "Communication",
+            "level": 4.5
+        },
+        {
+            "title": "Open minded",
+            "level": 3.5
+        }
+    ],
+    
+    "events":[
     {
         "title": "The Birth",
         "date": "3rd of December, 1996",
@@ -9,179 +98,330 @@
     },
     
     {
-        "title": "Kindergarden",
-        "date": "Pula mai stie....",
-        "description": "Lorem ipsum for the moment...",
+        "title": "First steps",
+        "article_title": "Kindergarden",
+        "date": "the year of 1999",
+        "description": "This was the beginning of Bogdan's education. It was the time he went to the first levels of school, crying as any other child, wishing he would not leave his parents. But, as time passed, and he started to play with other children of his age, he soon started to like it more and more; maybe he was starting to enjoy it? Or maybe a passion for learning was just catching wings? No one will ever know.",
         "hasAcc": false,
         "accs": []
     },
     
     {
-        "title": "Primary School",
+        "title": "Leveled up!",
+        "article_title": "Primary School",
         "date": "15th of September, 2003",
-        "description": "",
+        "description": "It was the beginning of autumn, but the air was hot. There were so many people gathered in the tiny school courtyard, and he was feeling scared again; but there he met the one who will later become his best friend. the upcoming <i>eight</i> years consisted in a time of joy, childhood at its finest, and preparing for the <u>grand step</u>: <i>highschool</i>. Bogdan even managed to accomplish some extras along the way..",
         "hasAcc": true,
         "accs": [
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "Basketball",
+                "date": "Sometime in 2005",
+                "description": "At the knowledge that their son was willing to start football (the main sport at that time in his hometown), they proposed him what later became to be the love of his life: <i>Basketball</i>.",
+                "awards": [
+                    {
+                        "title": "Basketball School Competitions",
+                        "description": "Participated in multiple school competitions, usually getting to the city stage."
+                    }
+                ]
             },
+            
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "Archimedes Mathematics Contests",
+                "date": "",
+                "description": "The contest consisted in a series of mathematical problems of school level, and I managed to reach the city stage sometimes, but usually unable to pass the second stage.",
+                "awards": [
+                    {
+                        "title": "Title",
+                        "description": "Description"
+                    }
+                ]
             },
+                    
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "The Kangaroo English Contests",
+                "date": "",
+                "description": "Participated in multiple editions of the contest, usually getting to the city stage of the competition.",
+                "awards": [
+                    {
+                        "title": "Title",
+                        "description": "Description"
+                    }
+                ]
+            },
+                    
+            {
+                "title": "Multiple Olimpiads",
+                "date": "",
+                "description": "The list contains competitions in Biology, Mathematics, and English school olimpiads.",
+                "awards": [
+                    {
+                        "title": "Title",
+                        "description": ""
+                    }
+                ]
+            },
+            
+            {
+                "title": "National Evaluation Exam",
+                "date": "",
+                "description": "The National Evaluation Exam was the step that everyone was preparing during the school years; all the subjects learned during the eight years of school were pointing to the Mathematics, Romanian, and English exams at this point.",
+                "awards": [
+                    {
+                        "title": "Mathematics result",
+                        "description": "Math mark"
+                    },
+                    
+                    {
+                        "title": "Romanian result",
+                        "description": "Romanian mark"
+                    },
+                    
+                    {
+                        "title": "English result",
+                        "description": "English mark"
+                    }
+                ]
             }
         ]
     },
     
     {
-        "title": "Highschool",
+        "title": "Level H",
+        "article_title": "Highschool",
         "date": "15th of September, 2011",
-        "description": "",
+        "description": "The time passed, and most of his colleagues got to various highschools in Bucharest. Bogdan had an overall grade to go to other institutions, but he chose the 'Grigore Moisil' Highschool in Bucharest. Starting then, his life started to change. He was still playing basketball at a competition level, participating in both school, and external competitions such as the Streetball Contest. He was also starting to love Informatics (or maybe not really love it), the first year bringing him a top mark of 7 out of 10. But he felt a call for this subject, so in the upcoming years, he managed to raise to a minimum of 8 out of 10.",
         "hasAcc": true,
         "accs": [
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "Basketball again",
+                "date": "2011 - 2015",
+                "description": "Again, there were competitions that we (because there was the team that did all the work) managed to qualify in the top of the leaderboards, but there wew also times when we were not able to pass to the next stages.",
+                "awards": [
+                    {
+                        "title": "Title",
+                        "description": "Description"
+                    }
+                ]
             },
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "English Olympiads",
+                "date": "2011 - 2015",
+                "description": "There was the passion of learning English again, which pushed Bogdan to be the best. He also managed to take part in some competitions, but now, the main objective was to gain the Cambridge English Certificate.",
+                "awards": [
+                    {
+                        "title": "Title",
+                        "description": "Description"
+                    }
+                ]
             },
+            
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "Certificates",
+                "date": "2014 - 2015",
+                "description": "There were some certificates I have been awarded and those are:",
+                "awards": [
+                    {
+                        "title": "ECDL Core Certificate",
+                        "description": ""
+                    },
+                    
+                    {
+                        "title": "Database Design and Programming With SQL",
+                        "description": ""
+                    }
+                ]
+            },
+            
+            {
+                "title": "The 'Great Exam'",
+                "date": "July, 2015",
+                "description": "The so called <i>Bacalaureat</i> was the exam that every Romanian at least once thought in fear about. It consisted in a Romanian Language exam, a Mathematics exam, and, at choice, a Biology Exam, a Chemistry exam, and an Informatics exam. Let's make a quick recap: Bogdan had no proximity with Chemistry (actually he hated it), and Biology started to sound so much like an ancient language to him; so you probably got the exam that he picked.",
+                "awards": [
+                    {
+                        "title": "Romanian Result",
+                        "description": 9.00
+                    },
+                    
+                    {
+                        "title": "Mathematics Result",
+                        "description": 9.10
+                    },
+                    
+                    {
+                        "title": "Informatics Result",
+                        "description": 9.95
+                    }
+                ]
             }
         ]
     },
     
     {
-        "title": "University",
-        "date": "1st of November, 2015",
-        "description": "",
+        "title": "Revelations",
+        "article_title": "The Faculty of Mathematics and Informatics - the University of Buchares",
+        "date": "1st of November, 2015 - June, 2017",
+        "description": "As a fresh graduate of the 'Grigore Moisil' Highschool, Bogdan found himself required to make a choice that will draw his path in life: <i>he needed to pick a University out of the neverending list of institutions.</i> After arguing on selecting the Politehnica University (one of the best at that time), or aiming for a place in the University of Bucharest (another top qualified institution in his hometown), or settling for a place at the Academy of Economical Studies, he went for it, calling <i>all-in</i> for the so called 'Teacher Factory'; it was a common opinion that the University of Bucharest molds only teachers, although Bogdan knew that it was a misconception of the masses. It didn't take long though, taken into account his expectations regarding the 'Uni-life', and his slowly-but-surely loss of interest in learning what he considered unnecessary subjects, to change his mind after the first year as a student. In the second year, he felt like giving up, tasting the attraction to actual development (and not blunting the edges of books in search of a strange algorithm), which in the end resulted in ending his experience at the University of Bucharest, and search for something more suitable to him.",
         "hasAcc": true,
         "accs": [
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "More Basketball",
+                "date": "2015 - 2016",
+                "description": "Once again, the passion to Basketball prevailed, spending most of the time inside a gym, training, becoming better and better, and going to various competitions. '22 hours of training per week? Come at me, bro'!'",
+                "awards": [
+                    {
+                        "title": "University Basketball Cup",
+                        "description": "Description"
+                    },
+                    
+                    {
+                        "title": "University Streetball - ASMI",
+                        "description": "Description"
+                    }
+                ]
             },
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            },
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "ITFest Hackathon - ASE",
+                "date": "November, 2015",
+                "description": "Joining with two colleagues from University, the contest required the teams to develop a Web app in a 12h timeframe",
+                "awards": [
+                    {
+                        "title": "Participation",
+                        "description": "We were ill-prepared for the contest, with no former experience, but we managed to 'create' something, having a good time along the way."
+                    }
+                ]
             }
         ]
     },
     
     {
-        "title": "First Job",
+        "title": "career.start();",
+        "article_title": "Gameloft SRL",
         "date": "June, 2016",
-        "description": "",
+        "description": "During the first year of University, Bogdan felt like experiencing what really means to <u>work</u>; the subjects taught at school were of poor interest, and our main character in this story was willing to learn <i>something</i>. That was the reason of starting as a <b>QA Analyst Technician</b> at <b>Gameloft</b>. At first, it was quite nice, he was starting to understand the basic principles of programming, the cycles of app development, and most importantly, the life of an employee. But as time passed, and the job starting to become so exhaustingly repetitive, he refused to continue his contract.",
         "hasAcc": true,
         "accs": [
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            },
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            },
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "Gained Skills",
+                "date": "June, 2016 - September, 2016",
+                "description": "The skills that I was able to improve, or gain",
+                "awards": [
+                    {
+                        "title": "Teamwork",
+                        "description": ""
+                    },
+                    
+                    {
+                        "title": "Bug tracking",
+                        "description": ""
+                    },
+                    
+                    {
+                        "title": "Bug reporting",
+                        "description": ""
+                    },
+                    
+                    {
+                        "title": "Time management",
+                        "description": ""
+                    }
+                ]
             }
         ]
     },
     
     {
-        "title": "Second Job",
-        "date": "5th of December, 2016",
-        "description": "",
+        "title": "career.upgrade();",
+        "article_title": "Team Extension SRL",
+        "date": "5th of December, 2016 - Present",
+        "description": "After a phone call in late November, 2016, Bogdan realized that it's time he proves his aptitudes; a recruiter just phoned him, asking if he was still interested in joining their company for a paid Internship. Our becoming-hero was thrilled after the interview, preparing to start his career as a mobile developer at the beginning of December, the same year. It took him motivation, hardworking, quick thinking and trust to follow the path that was building in front of him, gradually raising from <i>trainee</i>, to <i>junior Android developer</i>, being asked to <i>manage</i> his junior colleagues, and finally changing the department to <i>Salesforce</i>, and starting to work as a <i>junior Salesforce developer</i>.",
         "hasAcc": true,
         "accs": [
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "Salesforce Platform Developer I",
+                "date": "August, 2017",
+                "description": "Awarded for completing the Salesforce training provided by the company, and proving the ability of developing Salesforce solutions in APEX, Visualforce, and Lightning; the certificate has been awarded as a result of the Salesforce Platform Developer I exam.",
+                "awards": [
+                    
+                ]
             },
             {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            },
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
+                "title": "Skills",
+                "date": "December, 2016 - Present",
+                "description": "I was able to gain new skills and improve my capabilities while working here. Some of the skills that I managed to sharpen are:",
+                "awards": [
+                    {
+                        "title": "Time management",
+                        "description": "Grew a strong sense of establishing deadlines for my projects, and respecting them"
+                    },
+                    
+                    {
+                        "title": "Team management",
+                        "description": "Built a strong sense of management regarding a team of 6-10 members, planning the next steps, asking for advice, and providing advice, when necessary, and establishing a working system for the best results"
+                    },
+                    
+                    {
+                        "title": "Leadership",
+                        "description": "Managed to understand the difference between a manager and a leader, putting my team on the first place, and helping them as much as possible, aiming to help them learn instead of asking for the Heavens"
+                    },
+                    
+                    {
+                        "title": "Java programming",
+                        "description": "Understood basic architectures and design patterns used in both the pure Java language, and the Android framework"
+                    },
+                    
+                    {
+                        "title": "JavaScript programming",
+                        "description": "Sharpened my abilities in working with JS, using it in both Web apps and various Salesforce solutions"
+                    },
+                    
+                    {
+                        "title": "APEX programming",
+                        "description": "Learned to develop multiple solutions in APEX regarding the Salesforce platform"
+                    },
+                    
+                    {
+                        "title": "HTML/CSS",
+                        "description": "Increased my capabilities in working with HTML and CSS, building Visualforce web pages; added to this, expanded my knowledge in web development, starting to understand Bootstrap and working in a cleaner, resoonsive manner"
+                    },
+                    
+                    {
+                        "title": "MongoDB",
+                        "description": "Started to learn about NoSQL databases and using them in personal projects, along with NodeJS"
+                    }
+                ]
             }
         ]
     },
     
     {
-        "title": "University",
-        "date": "1st of November, 2017",
-        "description": "",
-        "hasAcc": true,
+        "title": "Quick thinking",
+        "article_title": "Faculty of Managerial Informatics - the Romanian-American University of Bucharest",
+        "date": "1st of November, 2017 - Present",
+        "description": "After losing interest in the lessons provided by his teachers at the previous University, Bogdan has decided that the best move to make would be changing the institution, try something different, something that would enable him to do what he first expected. That being considered, he moved to <i>RAU</i>.",
+        "hasAcc": false,
         "accs": [
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            },
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            },
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            }
+            
         ]
     },
         
     {
         "title": "The Legend",
+        "article_title": "Current objectives",
         "date": "Sometime in the (hopefully) near future",
-        "description": "",
-        "hasAcc": true,
+        "description": "Bogdan wishes to improve as a developer enough that he can work as a full-stack mobile developer. He always loved cryptography, and finding answers where there are none, and he is willing to also persuade this side of the IT field. Like any other archeologist, he wants to remove the sand that stands on the surface of security systems; <i>'find their weakpoints, strengths, and exploits, and come up with improved versions'</i>, he would say. He never thought about failing without return, so he hopes that at some point, when he will be prepared, he will become a <u>Legend</u> - maybe even greater that the well known Steven Jobs, Bill Gates, and all the others that had met success before him. In the end, he chose a field in full expansion and evolution.",
+        "hasAcc": false,
         "accs": [
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            },
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            },
-            {
-                "title": "To do...",
-                "date": "To do...",
-                "description": "To do..."
-            }
+            
         ]
     }
-]
+],
+    
+    "contact": {
+        "phone": "0761697372",
+        "email": "a.birsasteanu@gmail.com",
+        "facebook": "www.facebook.com/lexu.alex.378",
+        "linkedin": "www.linkedin.com/in/bogdan-andrei-birsasteanu",
+        "github": "www.github.com/LexuBBAA",
+        "freelancer": "www.freelancer.com/u/abirsasteanu"
+    }
 }
