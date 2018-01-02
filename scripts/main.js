@@ -46,6 +46,8 @@ function loadData() {
             var element = myHistoryArray[i];
             buildTimelineEvent(element);
         }
+        
+        
     });
 }
 

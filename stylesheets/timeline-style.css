@@ -66,6 +66,7 @@
 /* The actual content */
 .timeline-content {
     padding-left: 5px;
+    overflow-x: hidden;
     position: relative;
     border-radius: 6px;
     border-bottom-color: aquamarine;

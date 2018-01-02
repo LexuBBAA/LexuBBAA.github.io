@@ -91,6 +91,7 @@
     "events":[
     {
         "title": "The Birth",
+        "article_title": "The Birth",
         "date": "3rd of December, 1996",
         "description": "The winter of 1996 has brought the Birsasteanu family a great joy. Their new family member, Bogdan Andrei Alexandru, has been born. It was one of the greatest gifts that Sorin's wife, Camelia, could have gotten on her aniversary. She was just celebrating her 22nd birthday, when her baby got to see the light for the first time. That was the moment when Sorin and Camelia realised that their son will aim for the stars.",
         "hasAcc": false,
@@ -110,7 +111,7 @@
         "title": "Leveled up!",
         "article_title": "Primary School",
         "date": "15th of September, 2003",
-        "description": "It was the beginning of autumn, but the air was hot. There were so many people gathered in the tiny school courtyard, and he was feeling scared again; but there he met the one who will later become his best friend. the upcoming <i>eight</i> years consisted in a time of joy, childhood at its finest, and preparing for the <u>grand step</u>: <i>highschool</i>. Bogdan even managed to accomplish some extras along the way..",
+        "description": "It was the beginning of autumn, but the air was hot. There were so many people gathered in the tiny school courtyard, and he was feeling scared again; but there he met the one who will later become his best friend. The upcoming <i>eight</i> years consisted in a time of joy, childhood at its finest, and preparing for the <u>grand step</u>: <i>highschool</i>. Bogdan even managed to accomplish some extras along the way..",
         "hasAcc": true,
         "accs": [
             {
@@ -127,58 +128,43 @@
             
             {
                 "title": "Archimedes Mathematics Contests",
-                "date": "",
+                "date": "2003 - 2011",
                 "description": "The contest consisted in a series of mathematical problems of school level, and I managed to reach the city stage sometimes, but usually unable to pass the second stage.",
-                "awards": [
-                    {
-                        "title": "Title",
-                        "description": "Description"
-                    }
-                ]
+                "awards": []
             },
                     
             {
                 "title": "The Kangaroo English Contests",
-                "date": "",
+                "date": "2003 - 2011",
                 "description": "Participated in multiple editions of the contest, usually getting to the city stage of the competition.",
-                "awards": [
-                    {
-                        "title": "Title",
-                        "description": "Description"
-                    }
-                ]
+                "awards": []
             },
                     
             {
                 "title": "Multiple Olimpiads",
-                "date": "",
+                "date": "2003 - 2011",
                 "description": "The list contains competitions in Biology, Mathematics, and English school olimpiads.",
-                "awards": [
-                    {
-                        "title": "Title",
-                        "description": ""
-                    }
-                ]
+                "awards": []
             },
             
             {
                 "title": "National Evaluation Exam",
-                "date": "",
+                "date": "June, 2011",
                 "description": "The National Evaluation Exam was the step that everyone was preparing during the school years; all the subjects learned during the eight years of school were pointing to the Mathematics, Romanian, and English exams at this point.",
                 "awards": [
                     {
-                        "title": "Mathematics result",
-                        "description": "Math mark"
+                        "title": "Mathematics: 10/10",
+                        "description": ""
                     },
                     
                     {
-                        "title": "Romanian result",
-                        "description": "Romanian mark"
+                        "title": "Romanian: 10/10",
+                        "description": ""
                     },
                     
                     {
-                        "title": "English result",
-                        "description": "English mark"
+                        "title": "English: 10/10",
+                        "description": ""
                     }
                 ]
             }
@@ -196,29 +182,19 @@
                 "title": "Basketball again",
                 "date": "2011 - 2015",
                 "description": "Again, there were competitions that we (because there was the team that did all the work) managed to qualify in the top of the leaderboards, but there wew also times when we were not able to pass to the next stages.",
-                "awards": [
-                    {
-                        "title": "Title",
-                        "description": "Description"
-                    }
-                ]
+                "awards": []
             },
             {
                 "title": "English Olympiads",
                 "date": "2011 - 2015",
                 "description": "There was the passion of learning English again, which pushed Bogdan to be the best. He also managed to take part in some competitions, but now, the main objective was to gain the Cambridge English Certificate.",
-                "awards": [
-                    {
-                        "title": "Title",
-                        "description": "Description"
-                    }
-                ]
+                "awards": []
             },
             
             {
                 "title": "Certificates",
                 "date": "2014 - 2015",
-                "description": "There were some certificates I have been awarded and those are:",
+                "description": "During the school period, I was able to gain several certifications. The list includes:",
                 "awards": [
                     {
                         "title": "ECDL Core Certificate",
@@ -227,6 +203,11 @@
                     
                     {
                         "title": "Database Design and Programming With SQL",
+                        "description": ""
+                    },
+                    
+                    {
+                        "title": "Cambridge Advanced English Certificate",
                         "description": ""
                     }
                 ]
@@ -238,18 +219,18 @@
                 "description": "The so called <i>Bacalaureat</i> was the exam that every Romanian at least once thought in fear about. It consisted in a Romanian Language exam, a Mathematics exam, and, at choice, a Biology Exam, a Chemistry exam, and an Informatics exam. Let's make a quick recap: Bogdan had no proximity with Chemistry (actually he hated it), and Biology started to sound so much like an ancient language to him; so you probably got the exam that he picked.",
                 "awards": [
                     {
-                        "title": "Romanian Result",
-                        "description": 9.00
+                        "title": "Romanian: 9/10",
+                        "description": ""
                     },
                     
                     {
-                        "title": "Mathematics Result",
-                        "description": 9.10
+                        "title": "Mathematics: 9.1/10",
+                        "description": ""
                     },
                     
                     {
-                        "title": "Informatics Result",
-                        "description": 9.95
+                        "title": "Informatics: 9.95/10",
+                        "description": ""
                     }
                 ]
             }
@@ -270,12 +251,12 @@
                 "awards": [
                     {
                         "title": "University Basketball Cup",
-                        "description": "Description"
+                        "description": ""
                     },
                     
                     {
-                        "title": "University Streetball - ASMI",
-                        "description": "Description"
+                        "title": "University Streetball - ASMI Cup",
+                        "description": ""
                     }
                 ]
             },
@@ -303,7 +284,7 @@
             {
                 "title": "Gained Skills",
                 "date": "June, 2016 - September, 2016",
-                "description": "The skills that I was able to improve, or gain",
+                "description": "On the course of my employment at Gameloft, I started to gain valueble skills, and I have been provided with the opportunity of learning new assets. The skills that I was able to improve, or gain:",
                 "awards": [
                     {
                         "title": "Teamwork",
@@ -337,11 +318,14 @@
         "hasAcc": true,
         "accs": [
             {
-                "title": "Salesforce Platform Developer I",
+                "title": "Certifications",
                 "date": "August, 2017",
-                "description": "Awarded for completing the Salesforce training provided by the company, and proving the ability of developing Salesforce solutions in APEX, Visualforce, and Lightning; the certificate has been awarded as a result of the Salesforce Platform Developer I exam.",
+                "description": "While working at Team Extension, I had the opportunity of gaining important assets, along with a certificate required to work for one of our clients:",
                 "awards": [
-                    
+                    {
+                        "title":"Salesforce Platform Developer I",
+                        "description": "Awarded for completing the Salesforce training provided by the company, and proving the ability of developing Salesforce solutions in APEX, Visualforce, and Lightning; the certificate has been awarded as a result of the Salesforce Platform Developer I exam"
+                    }
                 ]
             },
             {
