@@ -118,3 +118,67 @@ function buildTimelineEvent(jsonElement) {
     }
     $(".timeline")[0].appendChild(htmlElement);
 }
+
+/**
+*   Method used to replace the progress bars' values on
+* mouse over / out events
+*/
+function progressLabelChange(pb) {
+    if(pb.innerHTML == ("<b>" + pb.skill.title + "</b>")) {
+        pb.innerHTML = "<b>" + pb.skill.level + "</b>";
+    } else {
+        pb.innerHTML = "<b>" + pb.skill.title + "</b>";
+    }
+}
+
+/**
+*   Method used to build the html elements representing
+* the skills progress bars
+*/
+function buildSkillBars(skillsArray, container) {
+    // Create a new Progress bar element for
+    //each of the skills retrieved
+    for(let i in skillsArray) {
+        var skill = skillsArray[i];
+        
+        var newPb = buildPB(skill);
+        container.appendChild(newPb);
+    }
+}
+
+/**
+*   Method used to build a single progress bar
+*/
+function buildPB(skill) {
+    var progressBarContainer = document.createElement("div");
+        progressBarContainer.className = "progress";
+        
+        var progressBar = document.createElement("div");
+        progressBar.className += "progress-bar";
+        progressBarContainer.appendChild(progressBar);
+        
+        progressBar.skill = skill;
+        var skillLevel = parseFloat(skill.level);
+        
+        if(skillLevel - 2 <= 0) {
+            progressBar.style.background = "#ff0000";
+        } else if(skillLevel - 3 <= 0) {
+            progressBar.style.background = "#ffa02a";
+        } else if(skillLevel - 4 <= 0) {
+            progressBar.style.background = "#10bd00";
+        } else {
+            progressBar.style.background = "#002bff";
+        }
+        
+        var val = skill.level * 10;
+        progressBar.style.width = (parseFloat(val) * 2) + "%";
+        progressBar.innerHTML = "<b>" + skill.title + "</b>";
+        progressBar.onmouseover = function() {
+            this.innerHTML = "<b>" + this.skill.level + "</b>";
+        };
+        progressBar.onmouseout = function() {
+            this.innerHTML = "<b>" + this.skill.title + "</b>";
+        };
+    
+    return progressBarContainer;
+}

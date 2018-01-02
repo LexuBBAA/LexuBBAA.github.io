@@ -47,8 +47,16 @@ function loadData() {
             buildTimelineEvent(element);
         }
         
-        
+        initSkillPB();
     });
+}
+
+function initSkillPB() {
+    var skillContainer = document.getElementById("skill_progress_bar_container");
+    buildSkillBars(mySkills, skillContainer);
+    
+    var softSkillContainer = document.getElementById("soft_skill_progress_bar_container");
+    buildSkillBars(mySoftSkills, softSkillContainer);
 }
 
 //  On successfull document loading, initialize the base data

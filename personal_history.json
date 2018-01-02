@@ -33,23 +33,23 @@
         },
         {
             "title": "C",
-            "level": 3
-        },
-        {
-            "title": "C++",
             "level": 2
         },
         {
-            "title": "HTML",
-            "level": 3.5
+            "title": "C++",
+            "level": 1.5
         },
         {
-            "title": "CSS",
+            "title": "HTML",
             "level": 3
         },
         {
+            "title": "CSS",
+            "level": 2.5
+        },
+        {
             "title": "APEX",
-            "level": 4
+            "level": 4.5
         }
     ],
     
