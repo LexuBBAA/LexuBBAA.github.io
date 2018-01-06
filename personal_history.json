@@ -402,85 +402,143 @@
     
     "experience": [
         {
-            "role": "",
+            "role": "QA Analyst",
             "company": {
-                "name": "",
-                "url": "",
-                "role": "",
-                "period": 0
+                "name": "Gameloft Romania SRL",
+                "url": "http://www.gameloft.ro/",
+                "period": "4 months",
+                "logo": "gameloft-logo.png",
+                "description": "<i>A leading digital and social game publisher, Gameloft® has established itself as one of the top innovators in its field since 2000. Gameloft creates games for all digital platforms and with an audience of 173 million monthly users offers via Gameloft Advertising Solutions a unique level of visibility and involvement to advertisers. Gameloft operates its own established franchises such as Asphalt®, Order & Chaos, Modern Combat and Dungeon Hunter and also partners with major rights holders including Universal, Illumination Entertainment, Disney®, Marvel®, Hasbro®, Fox Digital Entertainment, Mattel® and Ferrari®. Gameloft is present on all continents, distributes its games in over 100 countries and employs 5,000 developers.</i>"
             },
             "projects": [
                 {
-                    "title": "",
-                    "description": ""
-                }, 
-                
-                {
-                    "title": "",
-                    "description": ""
+                    "title": "Multiple Applications",
+                    "description": "During my employment at Gameloft, I have participated in testing sessions for multiple games, such as <i>Heroes of Order & Chaos (HOC)</i>, <i>UNO & Friends</i>, and <i>Asphalt Xtreme</i>."
                 }
             ]
         },
         
         {
-            "role": "",
+            "role": "Android Trainee",
             "company": {
-                "name": "",
-                "url": "",
-                "role": "",
-                "period": 0
+                "name": "Team Extension SRL",
+                "url": "https://www.teamextension.ro",
+                "period": "4 months",
+                "logo": "tx-logo-small.png",
+                "description": "<i>Ready to take your business to new heights? <br/><br/>Hire the best developers, engineers, programmers, coders, and consultants in Romania. <br/>Fortune 500 and start-ups choose Team Extension's developers for their mission critical software projects.</i>"
             },
             "projects": [
                 {
-                    "title": "",
-                    "description": ""
-                }, 
-                
-                {
-                    "title": "",
-                    "description": ""
+                    "title": "Various training applications",
+                    "description": "We had to get used to creating responsive apps using the Android Studio and writing Java code. Taken this into account, it was mandatory that we build as many little applications as possible such as: a Calculator App, a Geolocator of the office, and a Farm App (which was, in fact, a tiny game based on timed actions)."
                 }
             ]
         },
         
         {
-            "role": "",
+            "role": "Junior Android Developer",
             "company": {
-                "name": "",
-                "url": "",
-                "role": "",
-                "period": 0
+                "name": "Team Extension SRL",
+                "url": "https://www.teamextension.ro",
+                "period": "1 year",
+                "logo": "tx-logo-small.png",
+                "description": "<i>Ready to take your business to new heights? <br/><br/>Hire the best developers, engineers, programmers, coders, and consultants in Romania. <br/>Fortune 500 and start-ups choose Team Extension's developers for their mission critical software projects.</i>"
             },
             "projects": [
                 {
-                    "title": "",
-                    "description": ""
+                    "title": "Ivory Android",
+                    "src": "https://codecanyon.net/item/ivory-shop-ecommerce-app/19807262?s_rank=3",
+                    "preview": [
+                        {
+                            "src": "https://s3.envato.com/files/228262249/000.%20Cover%202.2.2.png"
+                        },
+                        
+                        {
+                            "src": "https://s3.envato.com/files/228262252/3.png"
+                        },
+                        
+                        {
+                            "src": "https://s3.envato.com/files/228262252/5.png"
+                        },
+                        
+                        {
+                            "src": "https://s3.envato.com/files/228262252/6.png"
+                        }
+                    ],
+                    "description": "An Android app aiming to provide the user with a functional template that he/she could easily customize to suit whatever needs the user would have, representing the ordering client of a shop. <br/><br/>Once the user customized the theme used by the app, by adding a server for providing a valid communication channel, the app would handle all the requests and functions, without needing any code modifications. <br/><br/>The app was designed to support various payment methods, integrating PayPal and Stripe gateways, but also supporting custom card payment processing."
                 }, 
                 
                 {
-                    "title": "",
-                    "description": ""
+                    "title": "DeliveryAmp",
+                    "src": "https://codecanyon.net/item/deliveryamp-android-app/20671581?s_rank=2",
+                    "preview": [
+                        {
+                            "src": "https://s3.envato.com/files/234625834/1%20(1).jpg"
+                        },
+                        
+                        {
+                            "src": "https://s3.envato.com/files/234625836/Screenshot_20171002-171318.png"
+                        },
+                        
+                        {
+                            "src": "https://s3.envato.com/files/234625836/Screenshot_20171002-171615.png"
+                        },
+                        
+                        {
+                            "src": "https://s3.envato.com/files/234625836/Screenshot_20171002-171604.png"
+                        },
+                        
+                        {
+                            "src": "https://s3.envato.com/files/234625836/Screenshot_20171002-181512.jpg"
+                        }
+                    ],
+                    "description": "This app was also aimed to become yet another template, mainly aimed for the users who are in search of an easily customizable app to handle deliveries for restaurants and fast-foods once a back-end system was linked to it. <br/><br/>Again the app was designed to support various payment methods, integrating PayPal and Stripe gateways, but also supporting custom card payment processing."
                 }
             ]
         },
         
         {
-            "role": "",
+            "role": "Junior Developer Lead",
             "company": {
-                "name": "",
-                "url": "",
-                "role": "",
-                "period": 0
+                "name": "Team Extension SRL",
+                "url": "https://www.teamextension.ro",
+                "period": "11 months",
+                "logo": "tx-logo-small.png",
+                "description": "<i>Ready to take your business to new heights? <br/><br/>Hire the best developers, engineers, programmers, coders, and consultants in Romania. <br/>Fortune 500 and start-ups choose Team Extension's developers for their mission critical software projects.</i>"
+            },
+            "projects": []
+        },
+        
+        {
+            "role": "Junior Salesforce Developer",
+            "company": {
+                "name": "Team Extension SRL",
+                "url": "https://www.teamextension.ro",
+                "period": "7 months",
+                "logo": "tx-logo-small.png",
+                "description": "<i>Ready to take your business to new heights? <br/><br/>Hire the best developers, engineers, programmers, coders, and consultants in Romania. <br/>Fortune 500 and start-ups choose Team Extension's developers for their mission critical software projects.</i>"
             },
             "projects": [
                 {
-                    "title": "",
-                    "description": ""
+                    "title": "Nearby Contacts Component",
+                    "src": "",
+                    "preview": [
+                        {
+                            "src": "https://www.howtogeek.com/wp-content/uploads/2015/09/xmap.jpg.pagespeed.gp+jp+jw+pj+ws+js+rj+rp+rw+ri+cp+md.ic.UL1bzS8IOq.jpg"
+                        }
+                    ],
+                    "description": "The component was aimed to provide the user with the list of Contacts located in its proximity. It was providing the user with quick navigation to the selected record's details page, and was able to smoothly pan to the selected Contact's location on map, displaying its full name above the related marker. <br/><br/>There were two versions of the developed app, one using an open-source library named <i>Leaflet.js</i>, while the other version running on <i>Google's API</i>. <br/><br/>This component was developed using the Lightning framework. For the Google API version, there was an extra Visualforce page, containing the actual representation of the map, created with the sole task of loading inside an <i>iFrame<i/> due to the LockerService's restrictions."
                 }, 
                 
                 {
-                    "title": "",
-                    "description": ""
+                    "title": "Partner Accounts Component",
+                    "src": "",
+                    "preview": [
+                        {
+                            "src": "assets/preview-not-available.png"
+                        }
+                    ],
+                    "description": "This component was the one I was most pride of at that time. Also developed using the <i>Lightning</i> framework, its role was to provide users  with a full list of Accounts associated to a parent Account. <br/><br/>The component offered multiple features such as creating a new partnership between the parent Account and another Account accessible to the user, deleting existing relationships, and various navigation actions that were aimed to improve user's experience using the Salesforce platform."
                 }
             ]
         }

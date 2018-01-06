@@ -7,14 +7,29 @@
     padding-left: 8px;
 }
 
+/**
+*   Skills section
+*/
 .progress {
     height: 30px;
     margin-top: 10px;
 }
 
+/*
+*   Experience section
+*/
 .experience-item {
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+.company-logo-container {
+    text-align: center;
+}
+
+.company-logo {
+    max-height: 250px;
+    padding: 20px;
 }
 
 .experience-item:hover {

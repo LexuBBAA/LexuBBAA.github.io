@@ -3,6 +3,7 @@ var myBio = {};
 var mySkills = [];
 var mySoftSkills = [];
 var myHistoryArray = [];
+var myExperience = [];
 var myContact = {};
 
 /**
@@ -33,6 +34,7 @@ function loadData() {
         myBio = jsonData.data;
         mySkills = jsonData.skills;
         mySoftSkills = jsonData.soft_skills;
+        myExperience = jsonData.experience;
         myContact = jsonData.contact;
         
         for(let i = jsonData.events.length - 1; i >= 0; i--) {
@@ -45,6 +47,14 @@ function loadData() {
         for(let i = myHistoryArray.length - 1; i >= 0; i--) {
             var element = myHistoryArray[i];
             buildTimelineEvent(element);
+        }
+        
+        var isTextLeft = true;
+//        for(let i = myExperience.length - 1; i >= 0; i--) {
+        for(let i = 0; i < myExperience.length; i++) {
+            var item = myExperience[i];
+            buildExpElement(item, isTextLeft);
+            isTextLeft = !isTextLeft;
         }
         
         initSkillPB();
