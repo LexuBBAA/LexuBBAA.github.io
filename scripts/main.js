@@ -59,10 +59,6 @@ function initSkillPB() {
     buildSkillBars(mySoftSkills, softSkillContainer);
 }
 
-function scrollToPosition(htmlElement) {
-    htmlElement.scrollTop = 0;
-}
-
 //  On successfull document loading, initialize the base data
 //used by the page
 $(document).ready(function() {

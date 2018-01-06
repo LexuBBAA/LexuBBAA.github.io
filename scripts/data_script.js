@@ -24,9 +24,6 @@ function displayDetails(historyItem) {
             buildSections(achievement, detailsContainer);
         }
     }
-    
-    var container = document.getElementById("event_details_container");
-    window.scrollTo(0, container.offsetTop - 200);
 }
 
 /**
@@ -88,6 +85,11 @@ function buildSections(achievement, container) {
     }
 }
 
+function navTopDetails() {
+    var container = document.getElementById("event_details_container");
+    window.scrollTo(0, container.offsetTop - 200);
+}
+
 /**
 *   Method used to dinamycally create timeline events
 */
@@ -113,6 +115,7 @@ function buildTimelineEvent(jsonElement) {
     //Event Details area of the page
     htmlElement.onclick = function() {
         displayDetails(jsonElement);
+        navTopDetails();
     }
     
     // Add the new htmlElement to the timeline
@@ -220,7 +223,7 @@ function buildExpElement(jsonExp, isTextLeft) {
     //  Create container for image
     var colImage = document.createElement("div");
     colImage.className += "col-4";
-    colImage..setAttribute("max-height", "250px");
+    colImage.setAttribute("max-height", "250px");
     colImage.setAttribute("text-align", "center");
     
     var img = document.createElement("img");
