@@ -400,6 +400,92 @@
     }
 ],
     
+    "experience": [
+        {
+            "role": "",
+            "company": {
+                "name": "",
+                "url": "",
+                "role": "",
+                "period": 0
+            },
+            "projects": [
+                {
+                    "title": "",
+                    "description": ""
+                }, 
+                
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        
+        {
+            "role": "",
+            "company": {
+                "name": "",
+                "url": "",
+                "role": "",
+                "period": 0
+            },
+            "projects": [
+                {
+                    "title": "",
+                    "description": ""
+                }, 
+                
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        
+        {
+            "role": "",
+            "company": {
+                "name": "",
+                "url": "",
+                "role": "",
+                "period": 0
+            },
+            "projects": [
+                {
+                    "title": "",
+                    "description": ""
+                }, 
+                
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        
+        {
+            "role": "",
+            "company": {
+                "name": "",
+                "url": "",
+                "role": "",
+                "period": 0
+            },
+            "projects": [
+                {
+                    "title": "",
+                    "description": ""
+                }, 
+                
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        }
+    ],
+    
     "contact": {
         "phone": "0761697372",
         "email": "a.birsasteanu@gmail.com",

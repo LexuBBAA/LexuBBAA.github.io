@@ -24,6 +24,9 @@ function displayDetails(historyItem) {
             buildSections(achievement, detailsContainer);
         }
     }
+    
+    var container = document.getElementById("event_details_container");
+    window.scrollTo(0, container.offsetTop - 200);
 }
 
 /**
@@ -181,4 +184,58 @@ function buildPB(skill) {
         };
     
     return progressBarContainer;
+}
+
+function buildExpElement(jsonExp, isTextLeft) {
+    //  Create container for individual item
+    var row = document.createElement("div");
+    row.className += "row";
+    
+    //  Create container for description
+    var colText = document.createElement("div");
+    colText.className += "col-8 align-self-center";
+    
+    //  Description role
+    var textRole = document.createElement("h4");
+    textRole.innerHTML += "Position Template";
+    //  Description company
+    var textCompany = document.createElement("small");
+    textCompany.className += "text-muted";
+    textCompany.innerHTML = "Company Template";
+    textRole.appendChild(textCompany);
+    colText.appendChild(textRole);
+    
+    //  Description period
+    var textPeriod = document.createElement("h5");
+    var link = document.createElement("a");
+    link.href = "https://www.google.ro";
+    link.innerHTML = "Link Template";
+    colText.appendChild(link);
+    
+    //  Description text
+    var par = document.createElement("p");
+    par.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    colText.appendChild(par);
+    
+    //  Create container for image
+    var colImage = document.createElement("div");
+    colImage.className += "col-4";
+    colImage..setAttribute("max-height", "250px");
+    colImage.setAttribute("text-align", "center");
+    
+    var img = document.createElement("img");
+    img.className += "img-fluid";
+    img.setAttribute("max-height", "inherit");
+    img.src = "assets/tx-logo-small.png";
+    img.alt = "Company Logo";
+    colImage.appendChild(img);
+    
+    //  Add both cols to the main container
+    if(isTextLeft) {
+        row.appendChild(colText);
+        row.appendChild(colImage);
+    } else {
+        row.appendChild(colImage);
+        row.appendChild(colText);
+    }
 }
