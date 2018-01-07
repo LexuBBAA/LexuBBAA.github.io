@@ -193,6 +193,12 @@ function buildPB(skill) {
     return progressBarContainer;
 }
 
+/**
+*   Method used to build a single Experience card
+* placing the company logo according to isTextLeft
+* value; isTextLeft == true -> right logo;
+* isTextLeft == false -> left logo
+*/
 function buildExpElement(jsonExp, isTextLeft) {
     //  Create container for individual item
     var row = document.createElement("div");
