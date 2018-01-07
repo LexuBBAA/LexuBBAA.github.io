@@ -207,13 +207,14 @@ function buildExpElement(jsonExp, isTextLeft) {
     textRole.innerHTML += jsonExp.role;
     //  Description company
     var textCompany = document.createElement("small");
-    textCompany.className += "text-muted";
+    textCompany.className += "text-light";
     textCompany.innerHTML = ' ' + jsonExp.company.name;
     textRole.appendChild(textCompany);
     colText.appendChild(textRole);
     
     //  Description period
     var link = document.createElement("a");
+    link.className += "experience-item-url";
     link.href = jsonExp.company.url;
     link.innerHTML = "Official Company Web Page";
     colText.appendChild(link);
