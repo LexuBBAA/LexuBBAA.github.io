@@ -54,6 +54,14 @@
 .progress {
     height: 30px;
     margin-top: 10px;
+    width: 0%;
+    animation: progressAnimation 0.5s 1 forwards;
+}
+
+@keyframes progressAnimation {
+    100% {
+        width: 100%;
+    }
 }
 
 /*

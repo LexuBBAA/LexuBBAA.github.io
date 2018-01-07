@@ -210,7 +210,7 @@ function buildExpElement(jsonExp, isTextLeft) {
     
     //  Description role
     var textRole = document.createElement("h4");
-    textRole.innerHTML += jsonExp.role;
+    textRole.innerHTML += "<u>" + jsonExp.role + "</u>";
     //  Description company
     var textCompany = document.createElement("small");
     textCompany.className += "text-light";
@@ -249,6 +249,71 @@ function buildExpElement(jsonExp, isTextLeft) {
         row.appendChild(colImage);
         row.appendChild(colText);
     }
+    
+//    if(jsonExp.projects.length != 0) {
+//    //  Create the hidden details of the card
+//    // which will be displayed once the card has
+//    // been clicked
+//    var hiddenContainer = document.createElement("div");
+//    hiddenContainer.className += "col-12";
+//    row.appendChild(hiddenContainer);
+//    
+//    var hiddenRow = document.createElement("div");
+//    hiddenRow.className += "row";
+//    hiddenContainer.appendChild(hiddenRow);
+//    
+//        var mainCol = document.createElement("div");
+//        mainCol.className += "col-12";
+//        hiddenRow.appendChild(mainCol);
+//        
+//    var rowTitle = document.createElement("div");
+//    rowTitle.className += "col-12";
+//    
+//    var sectionTitle = document.createElement("h5");
+//    sectionTitle.innerHTML = "Projects:";
+//    rowTitle.appendChild(sectionTitle);
+//    mainCol.appendChild(rowTitle);
+//    
+//    var projects = jsonExp.projects;
+//    for(let i = 0; i < projects.length; i++) {
+//        var expItem = projects[i];
+//        
+//        var listItemContainer = document.createElement("div");
+//        listItemContainer.className += "col-6";
+//        mainCol.appendChild(listItemContainer);
+//        
+//        var li = document.createElement("li");
+//        listItemContainer.appendChild(li);
+//        
+//        var link = document.createElement("a");
+//        link.innerHTML = expItem.title;
+//        link.href = expItem.src;
+//        li.appendChild(link);
+//        
+//        var itemDescription = document.createElement("div");
+//        itemDescription.className += "row";
+//        
+//        var imgSlideshow = document.createElement("div");
+//        imgSlideshow.className += "col-4";
+//        itemDescription.appendChild(imgSlideshow);
+//        
+//        var imgPreview = expItem.preview;
+//        
+//        var imgRes = document.createElement("img");
+//        imgRes.className += "img-fluid image-thumbnail";
+//        imgRes.alt = "Project preview";
+//        imgRes.src = (imgPreview) ? imgPreview[0].src: "/assets/preview-not-available.png";
+//        imgSlideshow.appendChild(imgRes);
+//        
+//        var itemTextContainer = document.createElement("div");
+//        itemTextContainer.className += "col-8";
+//        itemDescription.appendChild(itemTextContainer);
+//        
+//        var itemText = document.createElement("p");
+//        itemText.innerHTML = expItem.description;
+//        itemTextContainer.appendChild(itemText);
+//    }
+//    }
     
     $("#experience_container").append(row);
 }
