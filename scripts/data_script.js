@@ -193,6 +193,8 @@ function buildPB(skill) {
     return progressBarContainer;
 }
 
+
+var hiddenContents = [];
 /**
 *   Method used to build a single Experience card
 * placing the company logo according to isTextLeft
@@ -250,70 +252,89 @@ function buildExpElement(jsonExp, isTextLeft) {
         row.appendChild(colText);
     }
     
-//    if(jsonExp.projects.length != 0) {
-//    //  Create the hidden details of the card
-//    // which will be displayed once the card has
-//    // been clicked
-//    var hiddenContainer = document.createElement("div");
-//    hiddenContainer.className += "col-12";
-//    row.appendChild(hiddenContainer);
-//    
-//    var hiddenRow = document.createElement("div");
-//    hiddenRow.className += "row";
-//    hiddenContainer.appendChild(hiddenRow);
-//    
-//        var mainCol = document.createElement("div");
-//        mainCol.className += "col-12";
-//        hiddenRow.appendChild(mainCol);
-//        
-//    var rowTitle = document.createElement("div");
-//    rowTitle.className += "col-12";
-//    
-//    var sectionTitle = document.createElement("h5");
-//    sectionTitle.innerHTML = "Projects:";
-//    rowTitle.appendChild(sectionTitle);
-//    mainCol.appendChild(rowTitle);
-//    
-//    var projects = jsonExp.projects;
-//    for(let i = 0; i < projects.length; i++) {
-//        var expItem = projects[i];
-//        
-//        var listItemContainer = document.createElement("div");
-//        listItemContainer.className += "col-6";
-//        mainCol.appendChild(listItemContainer);
-//        
-//        var li = document.createElement("li");
-//        listItemContainer.appendChild(li);
-//        
-//        var link = document.createElement("a");
-//        link.innerHTML = expItem.title;
-//        link.href = expItem.src;
-//        li.appendChild(link);
-//        
-//        var itemDescription = document.createElement("div");
-//        itemDescription.className += "row";
-//        
-//        var imgSlideshow = document.createElement("div");
-//        imgSlideshow.className += "col-4";
-//        itemDescription.appendChild(imgSlideshow);
-//        
-//        var imgPreview = expItem.preview;
-//        
-//        var imgRes = document.createElement("img");
-//        imgRes.className += "img-fluid image-thumbnail";
-//        imgRes.alt = "Project preview";
-//        imgRes.src = (imgPreview) ? imgPreview[0].src: "/assets/preview-not-available.png";
-//        imgSlideshow.appendChild(imgRes);
-//        
-//        var itemTextContainer = document.createElement("div");
-//        itemTextContainer.className += "col-8";
-//        itemDescription.appendChild(itemTextContainer);
-//        
-//        var itemText = document.createElement("p");
-//        itemText.innerHTML = expItem.description;
-//        itemTextContainer.appendChild(itemText);
-//    }
-//    }
+    if(jsonExp.projects.length != 0) {
+        //  Create the hidden details of the card
+        // which will be displayed once the card has
+        // been clicked
+        var hiddenContainer = document.createElement("div");
+        hiddenContainer.className += "col-12";
+        hiddenContents.push(hiddenContainer);
+        row.appendChild(hiddenContainer);
+
+        var hiddenRow = document.createElement("div");
+        hiddenRow.className += "row";
+        hiddenContainer.appendChild(hiddenRow);
+
+        var mainCol = document.createElement("div");
+        mainCol.className += "col-12";      
+        hiddenRow.appendChild(mainCol);
+
+        var rowTitle = document.createElement("div");
+        rowTitle.className += "col-12";
+
+        var sectionTitle = document.createElement("h5");
+        sectionTitle.innerHTML = "Projects:";
+        rowTitle.appendChild(sectionTitle);
+        mainCol.appendChild(rowTitle);
+        
+        var projRow = document.createElement("div");
+        projRow.className += "row";
+        mainCol.appendChild(projRow);
+
+        var projects = jsonExp.projects;
+        for(let i = 0; i < projects.length; i++) {
+            var expItem = projects[i];
+            var imgContainer = document.createElement("div");
+            imgContainer.className += "col-3 project-img-container align-items-center";
+            projRow.appendChild(imgContainer);
+            
+            var img = document.createElement("img");
+            img.className += "img-fluid img-thumbnail project-img";
+            imgContainer.appendChild(img);
+            
+            img.setAttribute("height", "100%");
+            img.setAttribute("width", "100%");
+            if(expItem.preview != null && expItem.preview.length != 0) {
+                img.displayedIndex = 0;
+                img.images = expItem.preview;
+                showSlides(img);
+            } else {
+                img.src = "assets/preview-not-available.png";
+            }
+            
+            var projectTitleElement = document.createElement("div");
+            projectTitleElement.className += "project-middle";
+            imgContainer.appendChild(projectTitleElement);
+            var projectTitleText = document.createElement("div");
+            projectTitleText.className += "project-middle-text";
+            
+            var projLink = document.createElement("a");
+            projLink.href = (expItem.src) ? expItem.src : "";
+            projLink.style.textDecoration = "none";
+            projLink.className += "project-middle-text";
+            projLink.target = "_blank";
+            projLink.innerHTML = expItem.title;
+            projectTitleText.appendChild(projLink);
+            
+            projectTitleElement.appendChild(projectTitleText);
+        }
+        
+        hiddenContainer.style.display = "none";
+    
+        $(row).on("click", function() {
+            for(let e in hiddenContents) {
+                if($.contains(row, hiddenContents[e])) {
+                    if(hiddenContents[e].style.display == "block") {
+                        hiddenContents[e].style.display = "none";
+                    } else {
+                        hiddenContents[e].style.display = "block";
+                    }
+                } else {
+                    hiddenContents[e].style.display = "none";
+                }
+            }
+        });
+    }
     
     $("#experience_container").append(row);
 }
